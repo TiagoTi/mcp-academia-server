@@ -1,4 +1,4 @@
-# Servidor MCP
+# Servidor MCP: mcp-academia-server
 
 Quando começei pesquisar sobre, a maioria dos tutorias explicavam com executar
 o servidor mcp dentro de um script com outras componente, como o código que conecta
@@ -138,7 +138,7 @@ Saída: Informações detalhadas (nome, grupo, séries, repetições, intervalo,
 }
 ```
 
-### Exemplo de uma possivel chamada do cliente:
+### Exemplo de uma possivel chamada do clientes
 
 ```http
 curl -X POST http://localhost:3000 -H "Content-Type: application/json" -d '{
