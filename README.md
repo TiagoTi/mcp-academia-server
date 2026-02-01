@@ -1,7 +1,7 @@
 # Servidor MCP: mcp-academia-server
 
-Quando começei pesquisar sobre, a maioria dos tutorias explicavam com executar
-o servidor mcp dentro de um script com outras componente, como o código que conecta
+Quando começei pesquisar sobre, a maioria dos tutoriais explicavam com executar
+o servidor mcp dentro de um script com outros componente, como o código que conecta
 a uma llm, o arquivo `via-stdio.ts` é uma extração desse exemplo.
 
 Por outro lado, como engenheiro de software fiquei imaginando como eu podeira fazer para
@@ -13,7 +13,9 @@ Servidor MCP Centralizado via HTTP/SSE
 ### Executando via http
 
 ```http
-curl -X POST http://localhost:3000 -H "Content-Type: application/json" -d '{"jsonrpc": "2.0", "id": 1, "method": "tools/list", "params": {}}'
+curl -X POST http://localhost:3000 \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc": "2.0", "id": 1, "method": "tools/list", "params": {}}'
 ```
 
 ### Executando via stdio
@@ -27,13 +29,16 @@ echo '{"jsonrpc": "2.0", "id": 1, "method": "tools/list"}' | bun run via-stdio.t
 ### criando a imagem
 
 ```sh
-docker image build --pull -t mcp-server-academia .
+docker image build \
+    --pull -t mcp-server-academia .
 ```
 
 ### executando
 
 ```sh
-docker container run --rm --name mcp-server-academia  -d -p 3000:3000 mcp-server-academia
+docker container run \
+    --rm --name mcp-server-academia \
+    -d -p 3000:3000 mcp-server-academia
 ```
 
 ## O que ess MCP Especificamente Faz?
