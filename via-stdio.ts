@@ -8,21 +8,11 @@ import {
   ListToolsRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
 import { Database } from "bun:sqlite";
+import { Exercicio } from "./types";
 
 
 // Conexão com o Banco de Dados usando o SQLite nativo do Bun
 const db = new Database("./academia.sqlite3");
-
-// Tipos
-interface Exercicio {
-  id: number;
-  nome: string;
-  grupo_muscular: string;
-  series: number;
-  repeticoes: number;
-  intervalo_segundos: number;
-  observacoes: string;
-}
 
 // Criar servidor MCP
 const server = new Server(

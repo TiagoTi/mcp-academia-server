@@ -2,6 +2,7 @@
 // Servidor MCP para gerenciamento de exercícios de academia
 
 import { Database } from "bun:sqlite";
+import { Exercicio } from "./types";
 
 
 // Conexão com o Banco de Dados usando o SQLite nativo do Bun
