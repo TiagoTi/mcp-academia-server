@@ -1,7 +1,8 @@
 # Servidor MCP: mcp-academia-server
 
 - [repo rag: git/ti2](https://git.c.net.br/gogs_supper_admin/rag-academia-server) | [github](https://github.com/TiagoTi/rag-academia-server)
-- [repo: git/ti2](https://git.ti2.net.br/gogs_supper_admin/mcp-academia-server) | [github](https://github.com/TiagoTi/mcp-academia-server)
+- [repo mcp: git/ti2](https://git.ti2.net.br/gogs_supper_admin/mcp-academia-server) | [github](https://github.com/TiagoTi/mcp-academia-server)
+- [repo chat: git/ti2](https://git.ti2.net.br/gogs_supper_admin/chat-academia-server) | [github](https://github.com/TiagoTi/chat-academia-server)
 
 Quando começei pesquisar sobre, a maioria dos tutoriais explicavam com executar
 o servidor mcp dentro de um script com outros componente, como o código que conecta
